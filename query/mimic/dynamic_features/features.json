@@ -1,0 +1,112 @@
+{    
+    "temp": {
+            "type": "general",
+            "table": "mimiciv_icu.chartevents",
+            "dictionary_propname": "('Temperature Fahrenheit')",
+            "description": "température (°C)",
+            "snomed_code": 386725007,
+            "snomed_label" : "Body temperature",
+            "unit": "°C"
+},
+    "pam_invasive": {
+            "type": "hémodynamique",
+            "table": "mimiciv_icu.chartevents",
+            "dictionary_propname": "('Arterial Blood Pressure mean', 'ART BP Mean')",
+            "description": "pression artérielle moyenne invasive",
+            "snomed_code" : 251074006,
+            "snomed_label" : "Invasive mean arterial pressure",
+            "unit": "mmHg"
+        },
+    "pas_invasive": {
+        "type": "hémodynamique",
+        "table": "mimiciv_icu.chartevents",
+        "dictionary_propname": "('Arterial Blood Pressure systolic', 'ART BP Systolic')",
+        "description": "pression artérielle moyenne invasive",
+        "snomed_code" : 251071003,
+        "snomed_label" : "Invasive systolic arterial pressure",
+        "unit": "mmHg"
+    },
+    "pad_invasive": {
+        "type": "hémodynamique",
+        "table": "mimiciv_icu.chartevents",
+        "dictionary_propname": "('Arterial Blood Pressure diastolic', 'ART BP Diastolic')",
+        "description": "pression artérielle moyenne invasive",
+        "snomed_code" : 251073000,
+        "snomed_label" : "Invasive diastolic arterial pressure",
+        "unit": "mmHg"
+    },
+    "pam_non_invasive": {
+            "type": "hémodynamique",
+            "table": "mimiciv_icu.chartevents",
+            "dictionary_propname": "('Non Invasive Blood Pressure mean')",
+            "description": "pression artérielle moyenne non invasive",
+            "snomed_code" : 251074006,
+            "snomed_label" : "Non-invasive mean arterial pressure",
+            "unit": "mmHg"
+        },
+    "pas_non_invasive": {
+        "type": "hémodynamique",
+        "table": "mimiciv_icu.chartevents",
+        "dictionary_propname": "('Non Invasive Blood Pressure systolic')",
+        "description": "pression artérielle moyenne non invasive",
+        "snomed_code" : 251070002,
+        "snomed_label" : "Non-invasive systolic arterial pressure",
+        "unit": "mmHg"
+    },
+    "pad_non_invasive": {
+        "type": "hémodynamique",
+        "table": "mimiciv_icu.chartevents",
+        "dictionary_propname": "('Non Invasive Blood Pressure diastolic')",
+        "description": "pression artérielle moyenne non invasive",
+        "snomed_code" : 174255007,
+        "snomed_label" : "Non-invasive diastolic arterial pressure",
+        "unit": "mmHg"
+    },   
+    "heart_rate": {
+            "type": "hémodynamique",
+            "table": "mimiciv_icu.chartevents",
+            "dictionary_propname": "('Heart Rate')",
+            "description": "fréquence cardiaque",
+            "snomed_code" : 78564009,
+            "snomed_label" : "Pulse rate",
+            "unit": "bpm"
+        },
+    "spo2": {
+        "type": "respiratoire",
+        "table": "mimiciv_icu.chartevents",
+        "dictionary_propname": "('O2 saturation pulseoxymetry')",
+        "description": "saturation pulsée en oxygène",
+        "snomed_code" : 103228002,
+        "snomed_label" : "Hemoglobin saturation with oxygen",
+        "unit": "%"
+    },
+    "fr": {
+        "type": "respiratoire",
+        "table": "mimiciv_icu.chartevents",
+        "dictionary_propname": "('Respiratory Rate')",
+        "description": "fréquence respiratoire",
+        "snomed_code" : 86290005,
+        "snomed_label" : "Respiratory rate",
+        "unit": "bpm"
+    },
+    "fio2": {
+        "type": "respiratoire",
+        "table": "mimiciv_icu.chartevents",
+        "dictionary_propname": "('FiO2Int.FiO2Msmt', 'FiO2Int')",
+        "description": "fraction inspirée en oxygène",
+        "snomed_code" : 250774007,
+        "snomed_label" : "Inspired oxygen concentration",
+        "unit": "%"
+    },
+    "pep": {
+        "type": "respiratoire",
+        "table": "mimiciv_icu.chartevents",
+        "dictionary_propname": "('PEEPInt.PEEPMsmt')",
+        "description": "pression expiratoire positive",
+        "snomed_code" : 699113009,
+        "snomed_label" : "Expiratory positive airway pressure",
+        "unit": "cmH2O"
+    }
+
+
+}

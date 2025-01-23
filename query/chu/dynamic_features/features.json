@@ -1,0 +1,76 @@
+{    
+    "temp": {
+            "type": "general",
+            "table": "ptAssessment",
+            "dictionary_propname": "('temperatureInt.temperature')",
+            "description": "température (°C)"
+},
+    "pam_invasive": {
+            "type": "hémodynamique",
+            "table": "ptAssessment",
+            "dictionary_propname": "('arterialBPInt.mean.ptAdult', 'arterialBPInt.mean')",
+            "description": "pression artérielle moyenne invasive"
+        },
+    "pas_invasive": {
+        "type": "hémodynamique",
+        "table": "ptAssessment",
+        "dictionary_propname": "('arterialBPInt.systolic.ptAdult', 'arterialBPInt.systolic')",
+        "description": "pression artérielle moyenne invasive"
+    },
+    "pad_invasive": {
+        "type": "hémodynamique",
+        "table": "ptAssessment",
+        "dictionary_propname": "('arterialBPInt.diastolic.ptAdult', 'arterialBPInt.diastolic')",
+        "description": "pression artérielle moyenne invasive"
+    },
+    "pam_non_invasive": {
+            "type": "hémodynamique",
+            "table": "ptAssessment",
+            "dictionary_propname": "('nonInvasiveBPInt.mean.ptAdult', 'nonInvasiveBPInt.mean')",
+            "description": "pression artérielle moyenne non invasive"
+        },
+    "pas_non_invasive": {
+        "type": "hémodynamique",
+        "table": "ptAssessment",
+        "dictionary_propname": "('nonInvasiveBPInt.systolic', 'nonInvasiveBPInt.systolic.ptAdult')",
+        "description": "pression artérielle moyenne non invasive"
+    },
+    "pad_non_invasive": {
+        "type": "hémodynamique",
+        "table": "ptAssessment",
+        "dictionary_propname": "('nonInvasiveBPInt.diastolic.ptAdult', 'nonInvasiveBPInt.diastolic')",
+        "description": "pression artérielle moyenne non invasive"
+    },   
+    "heart_rate": {
+            "type": "hémodynamique",
+            "table": "ptAssessment",
+            "dictionary_propname": "('PulseRateInt.heartRate', 'heartRateInt.heartRate.ptAdult', 'heartRateInt.heartRate')",
+            "description": "fréquence cardiaque"
+        },
+    "spo2": {
+        "type": "respiratoire",
+        "table": "ptAssessment",
+        "dictionary_propname": "('SpO2Int.SpO2msmt.ptAdult','SpO2Int.SpO2msmt','SpO2Int')",
+        "description": "saturation pulsée en oxygène"
+    },
+    "fr": {
+        "type": "respiratoire",
+        "table": "ptAssessment",
+        "dictionary_propname": "('RespirationRateInt.Frquence_Respiratoire','AirwayRespiratoryRateInt.Frquence_respiratoire', 'AirwayRespiratoryRateInt.RespirationRateMsmt', 'AirwayRespiratoryRateInt.RespirationRateMsmt.ptAdult')",
+        "description": "fréquence respiratoire"
+    },
+    "fio2": {
+        "type": "respiratoire",
+        "table": "ptAssessment",
+        "dictionary_propname": "('FiO2Int.FiO2Msmt', 'FiO2Int')",
+        "description": "fraction inspirée en oxygène"
+    },
+    "pep": {
+        "type": "respiratoire",
+        "table": "ptAssessment",
+        "dictionary_propname": "('PEEPInt.PEEPMsmt')",
+        "description": "pression expiratoire positive"
+    }
+
+
+}

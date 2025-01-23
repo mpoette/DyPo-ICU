@@ -1,0 +1,26 @@
+{
+    "conclusion": {
+            "type": "compte_rendu",
+            "table": "ptIntervention",
+            "dictionary_propname": "Conclusi.Conclusion",
+            "description": "Champ Conclusion du B04"
+        },
+    "motif_adm": {
+            "type": "compte_rendu",
+            "table": "ptAssessment",
+            "dictionary_propname": "unit_motif_admission.Motif",
+            "description": "Champs motif d'entrée du B04"
+        },
+    "poids_admission": {
+        "type": "demographique",
+        "table": "ptDemographic",
+        "dictionary_propname": "AdmWtInt.Admit_weight",
+        "description": "Poids d'admission renseigné ICCA"
+    },
+    "taille": {
+        "type": "demographique",
+        "table": "ptDemographic",
+        "dictionary_propname": "PtHeight.height",
+        "description": "Taille d'admission renseigné ICCA"
+    }
+    }
