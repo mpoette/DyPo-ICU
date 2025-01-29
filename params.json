@@ -1,4 +1,5 @@
 {    
     "dataset": "chu",
-    "version": "v3"
+    "version": "v3",
+    "data_folder" : "{DATA_FOLD}"
 }
