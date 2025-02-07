@@ -1,5 +1,5 @@
 {    
-    "dataset": "mimic",
+    "dataset": "chu",
     "version": "v3",
     "data_folder" : "/data2/poette.m/dypo"
 }
