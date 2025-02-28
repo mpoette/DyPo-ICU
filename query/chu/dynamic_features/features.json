@@ -62,7 +62,7 @@
     "fio2": {
         "type": "respiratoire",
         "table": "ptAssessment",
-        "dictionary_propname": "('FiO2Int.FiO2Msmt', 'FiO2Int')",
+        "dictionary_propname": "('FiOpoett2Int.FiO2Msmt', 'FiO2Int')",
         "description": "fraction inspirée en oxygène"
     },
     "pep": {
