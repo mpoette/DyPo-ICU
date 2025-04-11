@@ -18,7 +18,7 @@ Dypo-ICU (Dynamic Prediction of Outcome in Intensive Care Units) is an initiativ
     1. **Data Imputation**  
         - Multivariate time series analysis often relies on algorithms like RNNs and CNNs, which are not inherently designed to handle missing data. However, missing data is a common challenge in ICU temporal datasets.
         - Various imputation methodologies are well-documented in the literature.
-        - Detailed analysis of imputation techniques: [link].
+        - Detailed analysis of imputation techniques: [link](https://github.com/mpoette/DyPo-ICU/tree/main/4.1.imputation).
         - Beyond filling gaps, imputation can support tasks such as synthetic data generation and outlier detection.
     2. **Outlier Detection**
         - Identifying anomalies in the data to ensure robustness and reliability in downstream analyses.
