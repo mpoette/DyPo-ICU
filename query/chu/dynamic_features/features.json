@@ -65,11 +65,59 @@
         "dictionary_propname": "('FiOpoett2Int.FiO2Msmt', 'FiO2Int')",
         "description": "fraction inspirée en oxygène"
     },
-    "pep": {
+    "peep": {
         "type": "respiratoire",
         "table": "ptAssessment",
         "dictionary_propname": "('PEEPInt.PEEPMsmt')",
         "description": "pression expiratoire positive"
+    },
+    "pplat": {
+        "type": "respiratoire",
+        "table": "ptAssessment",
+        "dictionary_propname": "('IPPInt.IPPNum')",
+        "description": "pression plateau"
+    },
+    "tidal_volume_in": {
+        "type": "respiratoire",
+        "table": "ptAssessment",
+        "dictionary_propname": "(SELECT dictionaryPropName FROM M_dictionary WHERE attributeDictionaryPropName = 'TidalVolumeMsmt' AND rootDictionaryPropName = 'TidalVolumeInt')",
+        "description": "volume courant"
+    },
+    "tidal_volume_exp" : {
+        "type": "respiratoire",
+        "table": "ptAssessment",
+        "dictionary_propname": "(SELECT dictionaryPropName FROM M_dictionary WHERE attributeDictionaryPropName = 'TidalVolumeMsmt' AND rootDictionaryPropName = 'exhaledTidalVolumeMachineInt')",
+        "description": "volume courant"
+    },     
+    "peak_pressure": {
+        "type": "respiratoire",
+        "table": "ptAssessment",
+        "dictionary_propname": "('PeakPressureInt.PeakPressureMsmt')",
+        "description": "pression de crète"
+    },
+    "mode_ventilation": {
+        "type": "respiratoire",
+        "table": "ptAssessment",
+        "dictionary_propname": "(SELECT dictionaryPropName FROM M_dictionary WHERE interventionId = 152868 AND attributeId = 66175)",
+        "description": "mode de ventilation"
+    },
+    "admin_o2":{
+        "type" : "respiratoire",
+        "table": "ptAssessment",
+        "dictionary_propname": "(SELECT dictionaryPropName FROM M_dictionary WHERE interventionId = 2476 AND attributeId = 19766)",
+        "description": "mode d'administration de l'oxygène (hors ventilation invasive)"
+    },
+    "o2_flow":{
+        "type": "respiratoire",
+        "table": "ptAssessment",
+        "dictionary_propname": "('O2DeliveryInt.O2_Flow')",
+        "description": "pression de crète"
+    },
+    "installation": {
+        "type": "general",
+        "table": "ptAssessment",
+        "dictionary_propname": "(SELECT dictionaryPropName FROM M_dictionary WHERE interventionId = 1911 AND attributeId = 14693)",
+        "description": "installation du patient"
     }
 
 
