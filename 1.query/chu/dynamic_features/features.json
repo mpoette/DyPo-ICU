@@ -62,10 +62,10 @@
     "fio2": {
         "type": "respiratoire",
         "table": "ptAssessment",
-        "dictionary_propname": "('FiOpoett2Int.FiO2Msmt', 'FiO2Int')",
+        "dictionary_propname": "('FiO2Int.FiO2Msmt', 'FiO2Int')",
         "description": "fraction inspirée en oxygène"
     },
-    "peep": {
+    "pep": {
         "type": "respiratoire",
         "table": "ptAssessment",
         "dictionary_propname": "('PEEPInt.PEEPMsmt')",
@@ -104,21 +104,46 @@
     "admin_o2":{
         "type" : "respiratoire",
         "table": "ptAssessment",
-        "dictionary_propname": "(SELECT dictionaryPropName FROM M_dictionary WHERE interventionId = 2476 AND attributeId = 19766)",
+        "dictionary_propname": "('O2DeliveryInt.O2DeliveryList', 'O2DeliveryInt.O2DeliveryList.Venti_mask', 'O2DeliveryInt.O2DeliveryList.Face_mask', 'O2DeliveryInt.O2DeliveryList.BiPAP_Mask', 'O2DeliveryInt.O2DeliveryList.Ventilator', 'O2DeliveryInt.O2DeliveryList.Transtracheal', 'O2DeliveryInt.O2DeliveryList.Nasal_cannula', 'O2DeliveryInt.O2DeliveryList.Optiflow_2', 'O2DeliveryInt.O2DeliveryList.Room_air', 'O2DeliveryInt.O2DeliveryList.Oximizer', 'O2DeliveryInt.O2DeliveryList.CPAP_mask', 'O2DeliveryInt.O2DeliveryList.Trach_mask', 'O2DeliveryInt.O2DeliveryList.Tpiece', 'O2DeliveryInt.O2DeliveryList.Partial_Rebreather_Mask', 'O2DeliveryInt.O2DeliveryList.Masque_Haute_Concentration', 'O2DeliveryInt.O2DeliveryList.TrachVent', 'O2DeliveryInt.O2DeliveryList.Lunettes_Nasales', 'O2DeliveryInt.O2DeliveryList.Face_tent', 'O2DeliveryInt.O2DeliveryList.Masque_Moyenne_Concentration', 'O2DeliveryInt.O2DeliveryList.Nonrebreather_mask')",
         "description": "mode d'administration de l'oxygène (hors ventilation invasive)"
     },
     "o2_flow":{
         "type": "respiratoire",
         "table": "ptAssessment",
         "dictionary_propname": "('O2DeliveryInt.O2_Flow')",
-        "description": "pression de crète"
+        "description": "débit d'oxygène"
     },
+    "endotracheal_tube": {
+        "type" : "respiratoire",
+        "table" : "ptTreatment",
+        "dictionary_propname"  : "(select DISTINCT(dictionaryPropName) FROM M_dictionary WHERE rootDictionaryPropName = 'ETTplacementInt')",
+        "description" : "présence d'une sonde d'intubation"
+    },
+    "tracheo": {
+        "type" : "respiratoire",
+        "table" : "ptTreatment",
+        "dictionary_propname"  : "(select DISTINCT(dictionaryPropName) FROM M_dictionary WHERE rootDictionaryPropName = 'TrachCareInt')",
+        "description" : "présence d'une trachéotomie"
+    },    
     "installation": {
         "type": "general",
         "table": "ptAssessment",
-        "dictionary_propname": "(SELECT dictionaryPropName FROM M_dictionary WHERE interventionId = 1911 AND attributeId = 14693)",
+        "dictionary_propname": "('Installat.Instal','Installat.Instal.Trendelenberg','Installat.Instal.Lever','Installat.Instal.Talons_surlevs','Installat.Instal.Right_lateral_decubitus','Installat.Instal.Lit_fauteuil','Installat.Instal.A_plat_strict','Installat.Instal.Bras_surlevs','Installat.Instal.HOB_at_30_degrees_or_greater','Installat.Instal.Supine','Installat.Instal.Head_of_bed__30_degrees','Installat.Instal.Recoucher','Installat.Instal.Reverse_Trendelenberg','Installat.Instal.Hed_of_bed__30_degrees','Installat.Instal.Prone','Installat.Instal.Chair','Installat.Instal.Left_lateral_decubitus','Installat.Instal.Prv_quin','Installat.Instal.prop_12_assis')",
         "description": "installation du patient"
-    }
-
-
+    },
+    "nad_dose_poids": {
+            "type": "medicament",
+            "table": "ptMedication",
+            "dictionary_propname": "('dripAdmIntervention.NOREPINEPHRINE_2.formularyAdditiveWtDoseRate','formularyDiscreteDoseInt.NOREPINEPHRINE_2.formularyAdditiveWtDosee','formularyDiscreteDoseInt.NOREPINEPHRINE_2.formularyAdditiveWtDosee','medAdminDescriptor.NOREPINEPHRINE_2.formularyAdditiveWtDose','dripAdmIntervention.formularyAdditiveWtDoseRate','formularyDiscreteDoseInt.NOREPINEPHRINE_2.formularyAdditiveWtDose','dripAdmIntervention.formularyAdditiveWtDoseRate','formularyDiscreteDoseInt.formularyAdditiveWtDose','formularyDiscreteDoseInt.formularyAdditiveWtDose','dripAdmIntervention.formularyAdditiveWtDoseRate','dripAdmIntervention.formularyAdditiveWtDoseRate','dripAdmIntervention.formularyAdditiveWtDoseRate','medAdminDescriptor.formularyAdditiveWtDose')",
+            "description": "noradrénaline en µg/kg/min"   
+    },
+    "urine_output": {
+        "type": "output",
+        "table": "ptTotalBalance",
+        "dictionary_propname": "('UrineOutput24Int')",
+        "description": "diurèse"   
 }
+    
+}
+
+
