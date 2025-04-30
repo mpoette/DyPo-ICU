@@ -2,147 +2,269 @@
     "temp": {
             "type": "general",
             "table": "ptAssessment",
-            "dictionary_propname": "('temperatureInt.temperature')",
+            "id": "('temperatureInt.temperature')",
             "description": "température (°C)"
 },
     "pam_invasive": {
             "type": "hémodynamique",
             "table": "ptAssessment",
-            "dictionary_propname": "('arterialBPInt.mean.ptAdult', 'arterialBPInt.mean')",
+            "id": "('arterialBPInt.mean.ptAdult', 'arterialBPInt.mean')",
             "description": "pression artérielle moyenne invasive"
         },
     "pas_invasive": {
         "type": "hémodynamique",
         "table": "ptAssessment",
-        "dictionary_propname": "('arterialBPInt.systolic.ptAdult', 'arterialBPInt.systolic')",
+        "id": "('arterialBPInt.systolic.ptAdult', 'arterialBPInt.systolic')",
         "description": "pression artérielle moyenne invasive"
     },
     "pad_invasive": {
         "type": "hémodynamique",
         "table": "ptAssessment",
-        "dictionary_propname": "('arterialBPInt.diastolic.ptAdult', 'arterialBPInt.diastolic')",
+        "id": "('arterialBPInt.diastolic.ptAdult', 'arterialBPInt.diastolic')",
         "description": "pression artérielle moyenne invasive"
     },
     "pam_non_invasive": {
             "type": "hémodynamique",
             "table": "ptAssessment",
-            "dictionary_propname": "('nonInvasiveBPInt.mean.ptAdult', 'nonInvasiveBPInt.mean')",
+            "id": "('nonInvasiveBPInt.mean.ptAdult', 'nonInvasiveBPInt.mean')",
             "description": "pression artérielle moyenne non invasive"
         },
     "pas_non_invasive": {
         "type": "hémodynamique",
         "table": "ptAssessment",
-        "dictionary_propname": "('nonInvasiveBPInt.systolic', 'nonInvasiveBPInt.systolic.ptAdult')",
+        "id": "('nonInvasiveBPInt.systolic', 'nonInvasiveBPInt.systolic.ptAdult')",
         "description": "pression artérielle moyenne non invasive"
     },
     "pad_non_invasive": {
         "type": "hémodynamique",
         "table": "ptAssessment",
-        "dictionary_propname": "('nonInvasiveBPInt.diastolic.ptAdult', 'nonInvasiveBPInt.diastolic')",
+        "id": "('nonInvasiveBPInt.diastolic.ptAdult', 'nonInvasiveBPInt.diastolic')",
         "description": "pression artérielle moyenne non invasive"
     },   
     "heart_rate": {
             "type": "hémodynamique",
             "table": "ptAssessment",
-            "dictionary_propname": "('PulseRateInt.heartRate', 'heartRateInt.heartRate.ptAdult', 'heartRateInt.heartRate')",
+            "id": "('PulseRateInt.heartRate', 'heartRateInt.heartRate.ptAdult', 'heartRateInt.heartRate')",
             "description": "fréquence cardiaque"
         },
     "spo2": {
         "type": "respiratoire",
         "table": "ptAssessment",
-        "dictionary_propname": "('SpO2Int.SpO2msmt.ptAdult','SpO2Int.SpO2msmt','SpO2Int')",
+        "id": "('SpO2Int.SpO2msmt.ptAdult','SpO2Int.SpO2msmt','SpO2Int')",
         "description": "saturation pulsée en oxygène"
     },
     "fr": {
         "type": "respiratoire",
         "table": "ptAssessment",
-        "dictionary_propname": "('RespirationRateInt.Frquence_Respiratoire','AirwayRespiratoryRateInt.Frquence_respiratoire', 'AirwayRespiratoryRateInt.RespirationRateMsmt', 'AirwayRespiratoryRateInt.RespirationRateMsmt.ptAdult')",
+        "id": "('RespirationRateInt.Frquence_Respiratoire','AirwayRespiratoryRateInt.Frquence_respiratoire', 'AirwayRespiratoryRateInt.RespirationRateMsmt', 'AirwayRespiratoryRateInt.RespirationRateMsmt.ptAdult')",
         "description": "fréquence respiratoire"
     },
     "fio2": {
         "type": "respiratoire",
         "table": "ptAssessment",
-        "dictionary_propname": "('FiO2Int.FiO2Msmt', 'FiO2Int')",
+        "id": "('FiO2Int.FiO2Msmt', 'FiO2Int')",
         "description": "fraction inspirée en oxygène"
     },
     "pep": {
         "type": "respiratoire",
         "table": "ptAssessment",
-        "dictionary_propname": "('PEEPInt.PEEPMsmt')",
+        "id": "('PEEPInt.PEEPMsmt')",
         "description": "pression expiratoire positive"
     },
     "pplat": {
         "type": "respiratoire",
         "table": "ptAssessment",
-        "dictionary_propname": "('IPPInt.IPPNum')",
+        "id": "('IPPInt.IPPNum')",
         "description": "pression plateau"
     },
     "tidal_volume_in": {
         "type": "respiratoire",
         "table": "ptAssessment",
-        "dictionary_propname": "(SELECT dictionaryPropName FROM M_dictionary WHERE attributeDictionaryPropName = 'TidalVolumeMsmt' AND rootDictionaryPropName = 'TidalVolumeInt')",
+        "id": "(SELECT dictionaryPropName FROM M_dictionary WHERE attributeDictionaryPropName = 'TidalVolumeMsmt' AND rootDictionaryPropName = 'TidalVolumeInt')",
         "description": "volume courant"
     },
     "tidal_volume_exp" : {
         "type": "respiratoire",
         "table": "ptAssessment",
-        "dictionary_propname": "(SELECT dictionaryPropName FROM M_dictionary WHERE attributeDictionaryPropName = 'TidalVolumeMsmt' AND rootDictionaryPropName = 'exhaledTidalVolumeMachineInt')",
+        "id": "(SELECT dictionaryPropName FROM M_dictionary WHERE attributeDictionaryPropName = 'TidalVolumeMsmt' AND rootDictionaryPropName = 'exhaledTidalVolumeMachineInt')",
         "description": "volume courant"
     },     
     "peak_pressure": {
         "type": "respiratoire",
         "table": "ptAssessment",
-        "dictionary_propname": "('PeakPressureInt.PeakPressureMsmt')",
+        "id": "('PeakPressureInt.PeakPressureMsmt')",
         "description": "pression de crète"
     },
     "mode_ventilation": {
         "type": "respiratoire",
         "table": "ptAssessment",
-        "dictionary_propname": "(SELECT dictionaryPropName FROM M_dictionary WHERE interventionId = 152868 AND attributeId = 66175)",
+        "id": "(SELECT dictionaryPropName FROM M_dictionary WHERE interventionId = 152868 AND attributeId = 66175)",
         "description": "mode de ventilation"
     },
     "admin_o2":{
         "type" : "respiratoire",
         "table": "ptAssessment",
-        "dictionary_propname": "('O2DeliveryInt.O2DeliveryList', 'O2DeliveryInt.O2DeliveryList.Venti_mask', 'O2DeliveryInt.O2DeliveryList.Face_mask', 'O2DeliveryInt.O2DeliveryList.BiPAP_Mask', 'O2DeliveryInt.O2DeliveryList.Ventilator', 'O2DeliveryInt.O2DeliveryList.Transtracheal', 'O2DeliveryInt.O2DeliveryList.Nasal_cannula', 'O2DeliveryInt.O2DeliveryList.Optiflow_2', 'O2DeliveryInt.O2DeliveryList.Room_air', 'O2DeliveryInt.O2DeliveryList.Oximizer', 'O2DeliveryInt.O2DeliveryList.CPAP_mask', 'O2DeliveryInt.O2DeliveryList.Trach_mask', 'O2DeliveryInt.O2DeliveryList.Tpiece', 'O2DeliveryInt.O2DeliveryList.Partial_Rebreather_Mask', 'O2DeliveryInt.O2DeliveryList.Masque_Haute_Concentration', 'O2DeliveryInt.O2DeliveryList.TrachVent', 'O2DeliveryInt.O2DeliveryList.Lunettes_Nasales', 'O2DeliveryInt.O2DeliveryList.Face_tent', 'O2DeliveryInt.O2DeliveryList.Masque_Moyenne_Concentration', 'O2DeliveryInt.O2DeliveryList.Nonrebreather_mask')",
+        "id": "('O2DeliveryInt.O2DeliveryList', 'O2DeliveryInt.O2DeliveryList.Venti_mask', 'O2DeliveryInt.O2DeliveryList.Face_mask', 'O2DeliveryInt.O2DeliveryList.BiPAP_Mask', 'O2DeliveryInt.O2DeliveryList.Ventilator', 'O2DeliveryInt.O2DeliveryList.Transtracheal', 'O2DeliveryInt.O2DeliveryList.Nasal_cannula', 'O2DeliveryInt.O2DeliveryList.Optiflow_2', 'O2DeliveryInt.O2DeliveryList.Room_air', 'O2DeliveryInt.O2DeliveryList.Oximizer', 'O2DeliveryInt.O2DeliveryList.CPAP_mask', 'O2DeliveryInt.O2DeliveryList.Trach_mask', 'O2DeliveryInt.O2DeliveryList.Tpiece', 'O2DeliveryInt.O2DeliveryList.Partial_Rebreather_Mask', 'O2DeliveryInt.O2DeliveryList.Masque_Haute_Concentration', 'O2DeliveryInt.O2DeliveryList.TrachVent', 'O2DeliveryInt.O2DeliveryList.Lunettes_Nasales', 'O2DeliveryInt.O2DeliveryList.Face_tent', 'O2DeliveryInt.O2DeliveryList.Masque_Moyenne_Concentration', 'O2DeliveryInt.O2DeliveryList.Nonrebreather_mask')",
         "description": "mode d'administration de l'oxygène (hors ventilation invasive)"
     },
     "o2_flow":{
         "type": "respiratoire",
         "table": "ptAssessment",
-        "dictionary_propname": "('O2DeliveryInt.O2_Flow')",
+        "id": "('O2DeliveryInt.O2_Flow')",
         "description": "débit d'oxygène"
     },
     "endotracheal_tube": {
         "type" : "respiratoire",
         "table" : "ptTreatment",
-        "dictionary_propname"  : "(select DISTINCT(dictionaryPropName) FROM M_dictionary WHERE rootDictionaryPropName = 'ETTplacementInt')",
+        "id"  : "(select DISTINCT(dictionaryPropName) FROM M_dictionary WHERE rootDictionaryPropName = 'ETTplacementInt')",
         "description" : "présence d'une sonde d'intubation"
     },
     "tracheo": {
         "type" : "respiratoire",
         "table" : "ptTreatment",
-        "dictionary_propname"  : "(select DISTINCT(dictionaryPropName) FROM M_dictionary WHERE rootDictionaryPropName = 'TrachCareInt')",
+        "id"  : "(select DISTINCT(dictionaryPropName) FROM M_dictionary WHERE rootDictionaryPropName = 'TrachCareInt')",
         "description" : "présence d'une trachéotomie"
     },    
     "installation": {
         "type": "general",
         "table": "ptAssessment",
-        "dictionary_propname": "('Installat.Instal','Installat.Instal.Trendelenberg','Installat.Instal.Lever','Installat.Instal.Talons_surlevs','Installat.Instal.Right_lateral_decubitus','Installat.Instal.Lit_fauteuil','Installat.Instal.A_plat_strict','Installat.Instal.Bras_surlevs','Installat.Instal.HOB_at_30_degrees_or_greater','Installat.Instal.Supine','Installat.Instal.Head_of_bed__30_degrees','Installat.Instal.Recoucher','Installat.Instal.Reverse_Trendelenberg','Installat.Instal.Hed_of_bed__30_degrees','Installat.Instal.Prone','Installat.Instal.Chair','Installat.Instal.Left_lateral_decubitus','Installat.Instal.Prv_quin','Installat.Instal.prop_12_assis')",
+        "id": "('Installat.Instal','Installat.Instal.Trendelenberg','Installat.Instal.Lever','Installat.Instal.Talons_surlevs','Installat.Instal.Right_lateral_decubitus','Installat.Instal.Lit_fauteuil','Installat.Instal.A_plat_strict','Installat.Instal.Bras_surlevs','Installat.Instal.HOB_at_30_degrees_or_greater','Installat.Instal.Supine','Installat.Instal.Head_of_bed__30_degrees','Installat.Instal.Recoucher','Installat.Instal.Reverse_Trendelenberg','Installat.Instal.Hed_of_bed__30_degrees','Installat.Instal.Prone','Installat.Instal.Chair','Installat.Instal.Left_lateral_decubitus','Installat.Instal.Prv_quin','Installat.Instal.prop_12_assis')",
         "description": "installation du patient"
     },
     "nad_dose_poids": {
             "type": "medicament",
             "table": "ptMedication",
-            "dictionary_propname": "('dripAdmIntervention.NOREPINEPHRINE_2.formularyAdditiveWtDoseRate','formularyDiscreteDoseInt.NOREPINEPHRINE_2.formularyAdditiveWtDosee','formularyDiscreteDoseInt.NOREPINEPHRINE_2.formularyAdditiveWtDosee','medAdminDescriptor.NOREPINEPHRINE_2.formularyAdditiveWtDose','dripAdmIntervention.formularyAdditiveWtDoseRate','formularyDiscreteDoseInt.NOREPINEPHRINE_2.formularyAdditiveWtDose','dripAdmIntervention.formularyAdditiveWtDoseRate','formularyDiscreteDoseInt.formularyAdditiveWtDose','formularyDiscreteDoseInt.formularyAdditiveWtDose','dripAdmIntervention.formularyAdditiveWtDoseRate','dripAdmIntervention.formularyAdditiveWtDoseRate','dripAdmIntervention.formularyAdditiveWtDoseRate','medAdminDescriptor.formularyAdditiveWtDose')",
+            "id": "('Adm IVSE: .noradrenaline bitartrate.Dose/Poids', 'Adm IVSE: NOREPINEPHRINE.Dose/Poids', 'Adm MEDS: .noradrenaline bitartrate.Dose/Poids', 'Adm MEDS: NOREPINEPHRINE.Dose/Poids', 'Administration médicaments: .noradrenaline bitartrate.Dose /kg', 'Administration médicaments: NOREPINEPHRINE.Dose /kg')",
             "description": "noradrénaline en µg/kg/min"   
+    },
+    "dobu_dose_poids": {
+        "type": "medicament",
+        "table": "ptMedication",
+        "id": "('Adm IVSE: DOBUTAMINE.Dose/Poids', 'Adm IVSE: .dobutamine.Dose/Poids')",
+        "description": "noradrénaline en µg/kg/min"   
     },
     "urine_output": {
         "type": "output",
         "table": "ptTotalBalance",
-        "dictionary_propname": "('UrineOutput24Int')",
+        "id": "('UrineOutput24Int')",
         "description": "diurèse"   
-}
+    },
+    "iv_input": {
+        "type": "input",
+        "table": "ptTotalBalance",
+        "id": "('IVInfusionTotal24hrInt.hourTotal')",
+        "description": "apport hydriques sur l'heure"   
+    },
+    "ecmo_type" : {
+        "type": "device",
+        "table" : "ptAssessment",
+        "id" : "('Type_thrapeutique_ECMO.Type_ECMO', 'Type_thrapeutique_ECMO.Type_ECMO.Veinoartrielles','Type_thrapeutique_ECMO.Type_ECMO.Veinoveineuses')",
+        "description" : "type d'ECMO"
+    },
+    "db_sang_hdi" : {
+        "type": "eer",
+        "table" : "ptAssessment",
+        "id" : "('Dbit_sang_mLh_HDi.Db_sg_HDi')",
+        "description" : "débit sang HDi"
+    },
+    "db_sang_cvvhf" : {
+        "type": "eer",
+        "table" : "ptAssessment",
+        "id" : "('Dbit_sang_HDc.Db_Sg')",
+        "description" : "débit sang CVVHF"
+    },
+    "cgr" : {
+        "type": "psl",
+        "table" : "ptIntake",
+        "id" : "('bloodProductInt.Packed_Cells.formularyBaseUsageMat')",
+        "description" : "transfusion de contrentés de globules rouges"
+    },    
+    "pfc" : {
+        "type": "psl",
+        "table" : "ptIntake",
+        "id" : "('bloodProductInt.Fresh_Frozen_PlasmaMat.formularyBaseUsageMat')",
+        "description" : "transfusion de plasma frais congelés"
+    },    
+    "plq" : {
+        "type": "psl",
+        "table" : "ptIntake",
+        "id" : "('bloodProductInt.Platelets.formularyBaseUsageMat')",
+        "description" : "transfusion de contrentés plaquettaires"
+    },
+    "poids_suivi" : {
+        "type": "general",
+        "table" : "ptAssessment",
+        "id" : "('ptWeightIntervention.ptWeight')",
+        "description" : "poids par pesée dans le service"
+    },
+    "hemoglobine" : 
+    {
+        "type": "biologie",
+        "table" : "ptLabResult",
+        "id" : "('Hb_veineux_GDS_gdl.Hb','Hb_artriel_GDS_gdl.Hb','HgbInt.Hb')",
+        "description" : "hémoglobine"
+    },
+    "lactate" : 
+    {
+        "type": "biologie",
+        "table" : "ptLabResult",
+        "id" : "('LacticAcidInt.Acide_lactique','Lactates_veineux_mmoll.Lactates_veineux','Lactates_artriel_mmoll.Lactates_artriel', 'LacticAcidInt.Acide_lactique')",
+        "description" : "lactatémie"
+    },
+    "leucocytes" : 
+    {
+        "type": "biologie",
+        "table" : "ptLabResult",
+        "id" : "('WBCx1000Int.GB_Gl')",
+        "description" : "leucocytes"
+    },
+    "num_plq" : 
+    {
+        "type": "biologie",
+        "table" : "ptLabResult",
+        "id" : "('PlateletsInt.Plaquettes_Gl')",
+        "description" : "numération plaquettaire"
+    },
+    "bili_tot" : 
+    {
+        "type": "biologie",
+        "table" : "ptLabResult",
+        "id" : "('totalBilirubinMstInt.Bilirubine_totale')",
+        "description" : "bilirubine totale"
+    },
+    "creat" : 
+    {
+        "type": "biologie",
+        "table" : "ptLabResult",
+        "id" : "('CreatinineInt.Cratinine_micromollPty')",
+        "description" : "créatininémie en µmol/l"
+    },
+    "tp" : 
+    {
+        "type": "biologie",
+        "table" : "ptLabResult",
+        "id" : "('Taux_de_prothrombine_.Taux_de_prothrombine')",
+        "description" : "taux de prothrombine"
+    },
+    "neuro_status" : 
+    {
+        "type": "status",
+        "table" : "ptAssessment",
+        "id" : "(14200)",
+        "description" : "état neurologique"
+    },
+    "glyc_cap" : 
+    {
+        "type": "biologie",
+        "table" : "ptLabResult",
+        "id" : "('HGT.Glycmie_capillaire')",
+        "description" : "glycémie capillaire"
+    }
+
+    
+    
+    
+    
     
 }
 

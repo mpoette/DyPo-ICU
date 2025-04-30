@@ -4,7 +4,7 @@ WITH ids_from_dict AS (
 	FROM 
 		M_dictionary 
 	WHERE 
-		dictionaryPropName IN {dictionaryPropName}
+		dictionaryPropName IN {id}
 ),
 censusCTE AS (
 	SELECT c.encounterId

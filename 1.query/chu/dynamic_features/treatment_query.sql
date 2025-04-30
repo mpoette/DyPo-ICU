@@ -4,7 +4,7 @@ WITH ids_from_dict AS (
 	FROM 
 		M_dictionary 
 	WHERE 
-		dictionaryPropName IN {id}
+		dictionaryLabel IN {id}
 ),
 censusCTE AS (
 	SELECT c.encounterId
@@ -20,7 +20,9 @@ SELECT
 	p.encounterId
 	, c.ptCensusId
 	, {feature} as feature
-	, p.hourTotal as valueNumber
+	, p.valueString
+	, p.valueNumber
+	, p.utcValueDateTime
 	, p.utcChartTime
 FROM
 	{feature_table} as p WITH (NOLOCK)
@@ -41,4 +43,6 @@ AND
 			(c2.utcOutTime >= p.utcChartTime) ORDER BY c2.inDayId ASC, c2.inTimeId ASC, c2.utcInTime) 
 
 WHERE
+	attributeId IN (SELECT attributeId FROM ids_from_dict)
+AND 
 	interventionId IN (SELECT interventionId FROM ids_from_dict)
